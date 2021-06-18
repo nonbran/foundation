@@ -1,4 +1,9 @@
-from constant.names import script, project, projects, home
+from constant.names import drive
+from constant.names import home
+from constant.names import project
+from constant.names import projects
+from constant.names import root
+from constant.names import script
 from pathlib import Path
 import os
 
@@ -13,7 +18,9 @@ paths = {
     script:         path_to_running_script,
     project:        path_to_project,
     projects:       path_to_projects,
-    home:           path_to_home
+    home:           path_to_home,
+    root:           path_to_home.root,
+    drive:          path_to_home.parts[0]
 }
 
 # verify the core paths exist
